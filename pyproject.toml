@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "hansard-normalised"
+version = "0.1.0"
+description = "A project aimed at converting a collection of Hansard HTML snippets to a normalised dataset."
+authors = ["Sam Hames <s.hames@uq.edu.au>", "Hamish Croser <hamish.croser@sydney.edu.au>"]
+readme = "README.md"
+repository = "https://github.com/Australian-Text-Analytics-Platform/hansard-normalised"
+license = "MIT"
+packages = [{include = "hansard-normalised"}]
+exclude = ["*log.txt"]
+
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+pandas = ">=2.1"
+beautifulsoup4 = ">=4.12"
+tqdm = ">=4.66.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
